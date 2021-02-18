@@ -1,6 +1,7 @@
 # EXPENSE MANAGER
 
 ***basic overview***
+
 This repository lets you to process an image of a bill/invoice and then extracts the important information from it like date of purchase,shop name and bill total.
 
 ##GETTING STARTED
