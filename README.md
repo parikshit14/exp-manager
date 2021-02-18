@@ -4,7 +4,7 @@
 
 This repository lets you to process an image of a bill/invoice and then extracts the important information from it like date of purchase,shop name and bill total.
 
-##GETTING STARTED
+## GETTING STARTED
 to run this on your own machine:
 - Start by creating a virtual env if you have anaconda : ```conda create -n envname python==3.6.8 pip```
 - Setup a new virtual environment and install the depencencies from the **requirements.txt** file ```pip install -r requirements.txt```
