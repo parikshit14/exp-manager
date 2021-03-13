@@ -23,16 +23,24 @@ to run this on your own machine:
 8. From the extacted text from the previous step we apply Named Entity Recognition using **spacy**.
 
 ## RESULTS:
+
+### Sample-Image
 - ![Sample-Image](https://github.com/parikshit14/exp-manager/blob/master/sample-images/receipt-scanned.jpg)
 
+### Image-After-thresholding
 - ![Image-After-thresholding](https://github.com/parikshit14/exp-manager/blob/master/sample-images/processed-image/Image-After-thresholding.jpg)
 
+### Image-After-SkewCorrection
 - ![Image-After-SkewCorrection](https://github.com/parikshit14/exp-manager/blob/master/sample-images/processed-image/Image-After-SkewCorrection.jpg)
 
+### Image-After-ContourDetection
 - ![Image-After-ContourDetection](https://github.com/parikshit14/exp-manager/blob/master/sample-images/processed-image/Image-After-ContourDetection.jpg)
 
+### Image-After-CannyEdgeDetection
 - ![Image-After-CannyEdgeDetection](https://github.com/parikshit14/exp-manager/blob/master/sample-images/processed-image/Image-After-CannyEdgeDetection.jpg)
 
+### Image-After-ChangingPerception
 - ![Image-After-ChangingPerception](https://github.com/parikshit14/exp-manager/blob/master/sample-images/processed-image/Image-After-ChangingPerception.jpg)
 
+### Image-Info-Extracted
 - ![Image-Info-Extracted](https://github.com/parikshit14/exp-manager/blob/master/sample-images/processed-image/Image-Info-Extracted.jpg)
