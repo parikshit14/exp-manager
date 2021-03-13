@@ -21,3 +21,4 @@ to run this on your own machine:
 6. Changing the perspective(warping) according to the biggest contour which will be tthe focus area and enhancing the image
 7. Optical Character Recognition is later performed on the transformed image.
 8. From the extacted text from the previous step we apply Named Entity Recognition using **spacy**.
+

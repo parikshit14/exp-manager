@@ -47,6 +47,7 @@ if biggest.size != 0:
 
 cv2.imshow("best_one",imgAdaptiveThre)
 cv2.waitKey(0)
+cv2.imwrite("sample-images/processed-image/Image-After-Sharpening.jpg", imgAdaptiveThre)
 
 # Applying OCR on the processed image
 image_after_ocr = OCRfile.InfoExtractor(imgAdaptiveThre,outfilename)

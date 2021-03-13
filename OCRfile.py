@@ -25,7 +25,7 @@ def InfoExtractor(imgAdaptiveThre,filename):
             text = "".join([c if ord(c) < 128 else "" for c in text]).strip()
             cv2.rectangle(imgAdaptiveThre, (x, y), (x + w, y + h), (0, 255, 0), 2)
             cv2.putText(imgAdaptiveThre, text, (x, y - 10), cv2.FONT_HERSHEY_SIMPLEX,1, (200, 0 ,0), 3)
-
+            cv2.imwrite("sample-images/processed-image/Image-Info-Extracted.jpg", imgAdaptiveThre)
     file = open(filename,"w")
     file.writelines(extracted_text)
     file.close()

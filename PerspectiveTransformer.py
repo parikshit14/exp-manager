@@ -13,6 +13,9 @@ def PerspectiveChanger(biggest,heightImg,widthImg,img):
     imgWarpColored=imgWarpColored[10:imgWarpColored.shape[0] , 5:imgWarpColored.shape[1]]
     imgAdaptiveThre= cv2.adaptiveThreshold(imgWarpColored, 255, 1, 1, 7, 2)
     imgAdaptiveThre = cv2.bitwise_not(imgAdaptiveThre)
+    cv2.imshow("perspective",imgAdaptiveThre)
+    cv2.waitKey(0);
+    cv2.imwrite("sample-images/processed-image/Image-After-ChangingPerception.jpg", imgAdaptiveThre)
     kernel = np.array([[0, -1, 0],
                       [-1, 5,-1],
                       [0, -1, 0]])

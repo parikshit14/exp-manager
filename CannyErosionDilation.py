@@ -9,6 +9,7 @@ def CannyErosionDilation(img):
     imgThreshold = cv2.Canny(imgBlur,10,50) # APPLY CANNY BLUR( provides options to change the threshold values)
     cv2.imshow("canny image",imgThreshold)
     cv2.waitKey(0)
+    cv2.imwrite("sample-images/processed-image/Image-After-CannyEdgeDetection.jpg", imgThreshold)
     kernel = np.ones((5,5))
     imgDial = cv2.dilate(imgThreshold, kernel, iterations=2)
     cv2.imshow("eroded",imgDial)

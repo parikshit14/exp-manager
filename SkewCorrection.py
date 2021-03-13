@@ -5,6 +5,7 @@ def skewCorrector(gray,heightImg,widthImg):
     thresh = cv2.threshold(gray, 0, 255, cv2.THRESH_BINARY | cv2.THRESH_OTSU)[1]
     cv2.imshow("thresh",thresh)
     cv2.waitKey(0)
+    cv2.imwrite("sample-images/processed-image/Image-After-thresholding.jpg", thresh)
     coords = np.column_stack(np.where(thresh > 0))
     angle = cv2.minAreaRect(coords)[-1]
     # the `cv2.minAreaRect` function returns values in the
@@ -23,4 +24,5 @@ def skewCorrector(gray,heightImg,widthImg):
     img = cv2.warpAffine(gray, M, (widthImg, heightImg), flags=cv2.INTER_CUBIC, borderMode=cv2.BORDER_REPLICATE)
     cv2.imshow("rotated image",img)
     cv2.waitKey(0)
+    cv2.imwrite("sample-images/processed-image/Image-After-SkewCorrection.jpg", img)
     return img
