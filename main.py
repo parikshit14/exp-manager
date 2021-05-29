@@ -33,7 +33,9 @@ img = SkewCorrection.skewCorrector(gray,heightImg,widthImg)
 imgThreshold = CannyErosionDilation.CannyErosionDilation(img)
 
 # FIND ALL COUNTOURS
-contours = ContourDetector.FindingContour(image,imgThreshold)
+cv2.imshow("image going in COUNTOURSdetection",img)
+cv2.waitKey(0)
+contours = ContourDetector.FindingContour(img,imgThreshold)
 
 biggest, maxArea = utlis.biggestContour(contours) # FIND THE BIGGEST CONTOUR
 if biggest.size != 0:
