@@ -16,7 +16,7 @@ to run this on your own machine:
 1. The **main.py** file drives the entire program.
 2. Skew correction is performed to check for skewness/rotation in the bill if found it is corrected.
 3. Performing canny-edge detection with dilation and erosion to normalize the text and finding there respective boundaries.
-4. Finding all the contoury present.
+4. Finding all the contour present.
 5. Looking for the biggest contour of them all which will indeed be required and further used.
 6. Changing the perspective(warping) according to the biggest contour which will be tthe focus area and enhancing the image
 7. Optical Character Recognition is later performed on the transformed image.
